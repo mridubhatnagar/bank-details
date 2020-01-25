@@ -1,0 +1,15 @@
+1. curl -X POST -d "username=admin&password=password123" http://localhost:8000/api/token/
+
+2. curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Nzk5MDUzNDAsInVzZXJfaWQiOjEsImp0aSI6IjE0OGNkNDY3ZDMwNjRlMThiYWVlMGZiZmYwMjQ4ZTJjIiwidG9rZW5fdHlwZSI6ImFjY2VzcyJ9.GfqJIYA4GdUAQU28WPx9Tvzk3GU7l5lyKNrM_S8BzgE" http://127.0.0.1:8000/banks/ABHY0065001/
+
+
+3. curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Nzk5MDUzNDAsInVzZXJfaWQiOjEsImp0aSI6IjE0OGNkNDY3ZDMwNjRlMThiYWVlMGZiZmYwMjQ4ZTJjIiwidG9rZW5fdHlwZSI6ImFjY2VzcyJ9.GfqJIYA4GdUAQU28WPx9Tvzk3GU7l5lyKNrM_S8BzgE" http://127.0.0.1:8000/branchdetail?bank_name=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI&limit=10"
+
+4. curl -X POST -H "Content-Type: application/json" -d '{"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Nzk5OTEzNDgsInVzZXJfaWQiOjEsImp0aSI6IjhiYzIwOWM3NGRiOTQzNGE4ZDdmNTM2MWViYmFmNTE2IiwidG9rZW5fdHlwZSI6InJlZnJlc2gifQ.zY2HrWiiB6il3ZmtnXz2rdm6hMUkoTfL-B4qBAkvbw4"}' http://localhost:8000/api/token/refresh/
+
+
+Final Commands
+curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZGY1NWUwYTQwNmE0ODE0OGFmYTUxZTJjNGRlNTE3NCIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE1Nzk5MDM5OTUsInVzZXJfaWQiOjF9.Rc746cNRe-bjSB7cM0Ubq92fZbMI-HQXol437o9eaBs" http://127.0.0.1:8000/banks/ABHY0065001/
+
+
+https://pypi.org/project/djangorestframework-simplejwt/4.3.0/
