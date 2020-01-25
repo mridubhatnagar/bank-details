@@ -29,7 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*", "https://branchdetailsapp.herokuapp.com/"]
 
-django_heroku.settings(locals())
+
 
 
 # Application definition
@@ -177,3 +177,5 @@ JWT_AUTH = {
     'JWT_AUTH_COOKIE': None,
 
 }
+
+django_heroku.settings(locals())
