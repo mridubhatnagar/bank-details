@@ -13,3 +13,27 @@ curl -H "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZGY
 
 
 https://pypi.org/project/djangorestframework-simplejwt/4.3.0/
+
+
+
+mridubhatnagar4@gmail.com
+p@ssw0rdheroku1234
+
+https://branchdetailsapp.herokuapp.com/banks/ABHY0065001/
+
+https://branchdetailsapp.herokuapp.com/banks/ABHY0065001/branchdetail?bank_name=ABHYUDAYA+COOPERATIVE+BANK+LIMITED&city=MUMBAI&limit=10
+
+
+
+
+1. curl -X POST -d "username=admin&password=password123" https://branchdetailsapp.herokuapp.com/api/token/
+
+
+2. curl -X POST -H "Content-Type: application/json" -d '{"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU4MDAzMjMzMCwianRpIjoiMGRkZTBjNTFkNGY4NDU5MTk5Y2JkODU4MmI2ZmZiN2QiLCJ1c2VyX2lkIjoxfQ.xyezdd5feMFl_ZzNN1sQfIEuZMgk6avyzXlEpF9XE8g"}' https://branchdetailsapp.herokuapp.com/api/token/refresh/
+
+3. curl -H "Authorization: Bearer "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTc5OTQ3MDI3LCJqdGkiOiI2YzYxMDQ5MjM0NGE0YTU3OWE5YWZkNWYzODdiYWU1ZiIsInVzZXJfaWQiOjF9.Rh47FwXvo1NtsKVsFB4FqTPyIMcQ5AzwUaWIIgnl5bs" https://branchdetailsapp.herokuapp.com/api/token/refresh/banks/ABHY0065001/
+
+
+4. curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI3ZGY1NWUwYTQwNmE0ODE0OGFmYTUxZTJjNGRlNTE3NCIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJleHAiOjE1Nzk5MDM5OTUsInVzZXJfaWQiOjF9.Rc746cNRe-bjSB7cM0Ubq92fZbMI-HQXol437o9eaBs" "https://branchdetailsapp.herokuapp.com/banks/branchdetail?bank_name=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI&limit=10"
+
+
