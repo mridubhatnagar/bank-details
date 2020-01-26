@@ -1,8 +1,7 @@
-1. curl -X POST -d "username=admin&password=password123" https://branchdetailsapp.herokuapp.com/api/token/
+1. curl -X POST -d "username=admin&password=p@ssw0rd" https://branchdetailsapp.herokuapp.com/api/token/
 
+2. curl -X POST -H "Content-Type: application/json" -d '{"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU4MDQ1MTAzOCwianRpIjoiN2VlMTk0OTJkY2RiNDVkNzg4NDE0NWQ4YjMyMWM3MDciLCJ1c2VyX2lkIjoxfQ.yNHpb2pReUwIa00lr_OWh8cSIhH8doy9J2oVxk6W-4s"}' https://branchdetailsapp.herokuapp.com/api/token/refresh/
 
-2. curl -X POST -H "Content-Type: application/json" -d '{"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTU4MDA1NzU5NiwianRpIjoiZmFkZGE4OTgwMDM2NDEwYmIzYjhjNWRhZWM3ZjcwYjMiLCJ1c2VyX2lkIjoxfQ.jpdnFdI1aKbEe8EEsOALYpkQ629pZLye5jZvElBC3j0"}' https://branchdetailsapp.herokuapp.com/api/token/refresh/
+3. curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTgwNDUxMDk5LCJqdGkiOiI1YTNiNGE3NmZkYmM0YjkwOWZmMTM1YjZiMzQ4MDZhZiIsInVzZXJfaWQiOjF9.ffCwofa1Ha4Ai0n1nxpuYLH3rR8NI4ldvUNaRcH2yRQ" https://branchdetailsapp.herokuapp.com/banks/ABHY0065001/
 
-3. curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTc5OTcxNTUyLCJqdGkiOiIyNTNmMjZiZTc2ZjQ0YWZlYjM5ZTk1MDZlYzMxNWM2NiIsInVzZXJfaWQiOjF9.38__wTZzQozIrQXhgC9JVa55pIbrXyex6CF3Ju-6TO4" https://branchdetailsapp.herokuapp.com/banks/ABHY0065001/
-
-4.curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTc5OTcxNTUyLCJqdGkiOiIyNTNmMjZiZTc2ZjQ0YWZlYjM5ZTk1MDZlYzMxNWM2NiIsInVzZXJfaWQiOjF9.38__wTZzQozIrQXhgC9JVa55pIbrXyex6CF3Ju-6TO4" "https://branchdetailsapp.herokuapp.com/branchdetail?bank_name=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI&limit=10"
+4.curl -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTgwNDUxMDk5LCJqdGkiOiI1YTNiNGE3NmZkYmM0YjkwOWZmMTM1YjZiMzQ4MDZhZiIsInVzZXJfaWQiOjF9.ffCwofa1Ha4Ai0n1nxpuYLH3rR8NI4ldvUNaRcH2yRQ" "https://branchdetailsapp.herokuapp.com/branchdetail?bank_name=ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED&city=MUMBAI&limit=10"
