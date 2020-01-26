@@ -146,17 +146,27 @@ REST_FRAMEWORK = {
 
 
 SIMPLE_JWT = {
-    'AUTH_HEADER_TYPE': 'Bearer',
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=5), 
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=5), 
+    'ROTATE_REFRESH_TOKENS': False,
+    'BLACKLIST_AFTER_ROTATION': True,
 
+    'ALGORITHM': 'HS256',
+    'SIGNING_KEY': SECRET_KEY,
+    'VERIFYING_KEY': None,
+
+    'AUTH_HEADER_TYPES': ('Bearer',),
     'USER_ID_FIELD': 'id',
-    'PAYLOAD_ID_FIELD': 'user_id',
+    'USER_ID_CLAIM': 'user_id',
 
-    'TOKEN_LIFETIME': datetime.timedelta(days=5),
-    'TOKEN_REFRESH_LIFETIME': datetime.timedelta(days=5),
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
+    'TOKEN_TYPE_CLAIM': 'token_type',
 
-    'SECRET_KEY': SECRET_KEY,  # Default to the django secret key
+    'JTI_CLAIM': 'jti',
 
-    'TOKEN_BACKEND': 'rest_framework_simplejwt.backends.TokenBackend',
+    'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
+    'SLIDING_TOKEN_LIFETIME': timedelta(days=5),
+    'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=5),
 }
 
 django_heroku.settings(locals())
